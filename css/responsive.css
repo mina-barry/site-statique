@@ -1,0 +1,1084 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVIGATION */
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: #152237;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 98px;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 1;
+    gap: 40px;
+}
+
+.nav-left .img {
+    width: 84px;
+    height: 31px;
+}
+
+.burger {
+    display: none;
+}
+
+.menuBurger {
+    display: none;
+}
+
+.nav-left .formation a {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.nav-center {
+    flex: 1;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.nav-center .recherche {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    background: #152237;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+.nav-right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.inscription,
+.connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.connexion {
+    background: #FFFFFF;
+}
+
+.inscription {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+}
+
+/* HERO SECTION */
+.img-bg {
+    width: 100%;
+    height: 451px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:
+        linear-gradient(94.01deg,
+            rgba(68, 221, 138, 0.8) 3.11%,
+            rgba(21, 183, 226, 0.8) 98.45%),
+        url("../image/bg-header.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.img-bg h1 {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+
+.img-bg p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 711px;
+    margin-bottom: 25px;
+}
+
+.en-savoir-plus {
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* FORMATIONS SECTIONS */
+.formations-recentes,
+.formations-populaires {
+    padding: 30px 100px 0;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.container-cadre {
+    margin: 34px auto 43px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1500px;
+    padding: 0 100px;
+    /* flex-wrap: wrap; */
+}
+
+.container-cadre .cadre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 307px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container-cadre .cadre > img {
+    width: 100%;
+    height: 203px;
+    object-fit: cover;
+}
+
+.prix {
+    position: absolute;
+    top: 165px;
+    right: 15px;
+}
+
+.prix img {
+    width: 120px;
+    height: auto;
+}
+
+.description {
+    padding: 20px 14px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.description .titre {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.description p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.description .etoiles {
+    margin: 4px 0;
+}
+
+.description .etoiles img {
+    height: 19px;
+}
+
+.btn-plus-formations-recentes,
+.btn-plus-formations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+button {
+    width: 225px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.btn-plus-formations button {
+    background: #152237;
+    color: #FFFFFF;
+}
+
+.btn-plus-formations-recentes button {
+    background: #FFFFFF;
+    color: #152237;
+    border: 1px solid #152237;
+}
+
+#formation-populaire {
+    width: 100%;
+    padding: 40px 0;
+}
+
+#formation-populaire2 {
+    width: 100%;
+    background-color: #152237;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+/* AVIS CLIENTS */
+#container-avis {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#mes-image {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.bloc1,
+.bloc2 {
+    flex: 1;
+    max-width: 665px;
+}
+
+.img-ronde,
+.img-ronde2 {
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.avis-nom {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 15px 0 10px;
+}
+
+.p1,
+.p2 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* LES AVANTAGES */
+.les-avantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F5F5;
+    padding: 80px 100px;
+    gap: 60px;
+}
+
+.img-teste {
+    flex: 1;
+    max-width: 800px;
+}
+
+.h2 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.icone-ul {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.icones {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.p-avantage {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-avantage {
+    flex: 1;
+    max-width: 727px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* CRÉEZ VOS FORMATIONS */
+.creez-vos-formation {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    background: #44DD8A;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 729px;
+}
+
+.taille-img-formation {
+    width: 100%;
+    height: auto;
+}
+
+.klivio {
+    flex: 1;
+    max-width: 686px;
+}
+
+.titrebloc {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.img-teste-cree {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.icone3 {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.ul-creez {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    list-style-type: none;
+}
+
+.ul-creez li {
+    margin-bottom: 25px;
+}
+
+/* À PROPOS */
+.propos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #F5F5F5;
+    padding: 0;
+}
+
+.propos > div:first-child {
+    flex: 1;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ul-propos {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 686px;
+}
+
+.bloc-img {
+    flex: 1;
+    max-width: 830px;
+    background: #152237;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-propos {
+    width: 430px;
+    max-width: 80%;
+    height: auto;
+}
+
+/* NOUS CONTACTER */
+.container-contacter {
+    padding: 80px 100px;
+}
+
+.nous-contacter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-contacter h2 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ligne-contact {
+    width: 350px;
+    border: 1px solid #44DD8A;
+    margin-bottom: 50px;
+}
+
+.nous-contacter form {
+    width: 100%;
+    max-width: 1335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#nom,
+#mail {
+    flex: 1;
+    height: 45px;
+    background: #152237;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#message {
+    width: 100%;
+    height: 195px;
+    background: #152237;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.bnt-envoi {
+    width: 351px;
+    height: 45px;
+    background: #44DD8A;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.mon-footer {
+    width: 100%;
+    background: #152237;
+    color: #FFFFFF;
+}
+
+.ligne-footer {
+    width: 100%;
+    height: 18px;
+    background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
+}
+
+#id-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 100px;
+    gap: 60px;
+}
+
+.logo-footer {
+    width: 243px;
+    height: auto;
+}
+
+.mention {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.ul-footer,
+.ul-footer2 {
+    list-style-type: none;
+}
+
+.ul-footer li,
+.ul-footer2 li,
+.ul-footer2 p {
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+#ulCoor {
+    list-style-type: none;
+}
+
+#ulCoor li {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+#marker-02 {
+    list-style: url(../image/marker-02.png);
+    list-style-position: inside;
+}
+
+#none {
+    list-style: none;
+}
+
+#phone {
+    list-style: url(../image/phone.png);
+    list-style-position: inside;
+}
+
+#mail-01 {
+    list-style: url(../image/mail-01.png);
+    list-style-position: inside;
+}
+
+.connect-inscrip {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.connect,
+.inscrip {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.connect {
+    background: #FFFFFF;
+}
+
+.inscrip {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+}
+
+.black {
+    color: #152237;
+}
+
+#social-ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px 40px;
+}
+
+.ligne {
+    width: 100%;
+    height: 2px;
+    background: #44DD8A;
+    margin-bottom: 30px;
+}
+
+.copy-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-social p {
+    color: #FFFFFF;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reseaux-sociaux p {
+    margin-right: 10px;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav {
+        padding: 0 40px;
+    }
+
+    .formations-recentes,
+    .formations-populaires {
+        padding: 30px 40px 0;
+        font-size: 32px;
+    }
+
+    .container-cadre {
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    #container-avis {
+        padding: 60px 40px;
+    }
+
+    .les-avantages,
+    .creez-vos-formation {
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .propos > div:first-child {
+        padding: 60px 40px;
+    }
+
+    .container-contacter {
+        padding: 60px 40px;
+    }
+
+    #id-footer,
+    #social-ligne {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .h2,
+    .titrebloc {
+        font-size: 32px;
+    }
+
+    .p-avantage,
+    .ul-creez {
+        font-size: 20px;
+    }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+    /* Navigation mobile */
+    .nav {
+        height: auto;
+        min-height: 80px;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+    }
+
+    .nav-left {
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-left .img {
+        width: 70px;
+        height: auto;
+    }
+
+    .menuBurger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 10;
+    }
+
+    .menuBurger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .formation {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        text-align: center;
+    }
+
+    .nav-center {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 20px;
+    }
+
+    .nav-center .recherche {
+        width: 100%;
+        max-width: none;
+    }
+
+    .nav-right {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 20px;
+    }
+
+    .burger:checked ~ .formation {
+        max-height: 80px;
+        padding: 20px;
+    }
+
+    .burger:checked ~ .formation ~ .nav-center {
+        max-height: 100px;
+        padding: 20px;
+    }
+
+    .burger:checked ~ .formation ~ .nav-center ~ .nav-right {
+        max-height: 200px;
+        padding: 20px 20px 30px;
+    }
+
+    .burger:checked ~ .menuBurger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger:checked ~ .menuBurger .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger:checked ~ .menuBurger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-right ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .inscription,
+    .connexion {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Hero section */
+    .img-bg {
+        height: auto;
+        min-height: 350px;
+        padding: 50px 20px;
+    }
+
+    .img-bg h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .img-bg p {
+        font-size: 16px;
+    }
+
+    /* Formations */
+    .formations-recentes,
+    .formations-populaires {
+        padding: 30px 20px 0;
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .container-cadre {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .container-cadre .cadre {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Avis clients */
+    #container-avis {
+        padding: 50px 20px;
+    }
+
+    .client {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    #mes-image {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .bloc1,
+    .bloc2 {
+        max-width: 100%;
+    }
+
+    /* Les avantages */
+    .les-avantages {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .img-teste {
+        width: 100%;
+    }
+
+    .h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .icone-ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icones {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .p-avantage {
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .img-avantage {
+        width: 100%;
+    }
+
+    /* Créez vos formations */
+    .creez-vos-formation {
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .image-container,
+    .klivio {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .titrebloc {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .img-teste-cree {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icone3 {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .ul-creez {
+        font-size: 16px;
+    }
+
+    .ul-creez li {
+        margin-bottom: 20px;
+    }
+
+    /* À propos */
+    .propos {
+        flex-direction: column;
+    }
+
+    .propos > div:first-child {
+        padding: 50px 20px;
+    }
+
+    .ul-propos {
+        font-size: 16px;
+    }
+
+    .bloc-img {
+        width: 100%;
+        max-width: 100%;
+        min-height: 300px;
+        padding: 40px 20px;
+    }
+
+    /* Contact */
+    .container-contacter {
+        padding: 50px 20px;
+    }
+
+    .container-contacter h2 {
+        font-size: 28px;
+    }
+
+    .ligne-contact {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    #nom,
+    #mail,
+    #message {
+        width: 100%;
+    }
+
+    .bnt-envoi {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    #id-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .logo-footer {
+        width: 180px;
+    }
+
+    .ul-footer,
+    .ul-footer2,
+    #ulCoor {
+        text-align: center;
+    }
+
+    .connect-inscrip {
+        align-items: center;
+    }
+
+    #social-ligne {
+        padding: 0 20px 30px;
+    }
+
+    .copy-social {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .reseaux-sociaux {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
