@@ -500,8 +500,6 @@ button {
 .icone-ul {
     display: flex;
     justify-content: center;
-
-
 }
 
 .p-avantage {
@@ -514,23 +512,22 @@ button {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
-
 }
 
 .icones {
+    margin-left: 200px;
     width: 30px;
     height: 265px;
     opacity: 1;
     top: 169px;
     left: 98px;
     margin-right: 35px;
-    margin-left: 98px;
+    margin-left: 8px;
+    vertical-align: bottom;
 }
 
 .h2 {
@@ -547,7 +544,7 @@ button {
     top: 79px;
     left: 98px;
     opacity: 1;
-    margin-left: 98px;
+    /* margin-left: 98px; */
 
 
 }
@@ -886,7 +883,7 @@ button {
     width: 100%;
     height: 18px;
     opacity: 1;
-    background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100% );
+    background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
 
 }
 
@@ -1231,167 +1228,181 @@ button {
             position: relative;
             top: auto;
             left: 120px;
-            
+
             align-content: center;
         }
     }
 
     /* Les avantages */
-            .les-avantages {
-                flex-direction: column;
-                padding: 50px 20px;
-                gap: 40px;
-            }
+    .les-avantages {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 40px;
+    }
 
-            .img-teste {
-                width: 100%;
-            }
+    .img-teste {
+        width: 100%;
+    }
 
-            .h2 {
-                font-size: 24px;
-                margin-bottom: 30px;
-            }
+    .h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
 
-            .icone-ul {
-                flex-direction: column;
-                gap: 20px;
-            }
+    .icone-ul {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-            .icones {
-                width: 100%;
-                max-width: 30px;
-            }
+    .icones {
+        width: 100%;
+        max-width: 30px;
+    }
 
-            .p-avantage {
-                font-size: 16px;
-                gap: 20px;
-            }
+    .p-avantage {
+        font-size: 16px;
+        gap: 20px;
+    }
 
-            .img-avantage {
-                width: 100%;
-            }
+    .img-avantage {
+        width: 100%;
+    }
 
-            /* Créez vos formations */
-            .creez-vos-formation {
-                flex-direction: column-reverse;
-                padding: 50px 20px;
-                gap: 40px;
-            }
+    /* Créez vos formations */
+    .creez-vos-formation {
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+        gap: 40px;
+    }
 
-            .image-container,
-            .klivio {
-                width: 100%;
-                max-width: 100%;
-            }
+    .image-container,
+    .klivio {
+        width: 100%;
+        max-width: 100%;
+    }
 
-            .titrebloc {
-                font-size: 24px;
-                text-align: center;
-                margin-bottom: 30px;
-            }
+    .titrebloc {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-            .img-teste-cree {
-                flex-direction: column;
-                gap: 20px;
-            }
+    .img-teste-cree {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-            .icone3 {
-                width: 100%;
-                max-width: 30px;
-            }
+    .icone3 {
+        width: 100%;
+        max-width: 30px;
+    }
 
-            .ul-creez {
-                font-size: 16px;
-            }
+    .ul-creez {
+        font-size: 16px;
+    }
 
-            .ul-creez li {
-                margin-bottom: 20px;
-            }
+    .ul-creez li {
+        margin-bottom: 20px;
+    }
 
-            /* À propos */
-            .propos {
-                flex-direction: column;
-            }
+    /* À propos */
+    .propos {
+        flex-direction: column;
+    }
 
-            .propos>div:first-child {
-                padding: 50px 20px;
-            }
+    .propos>div:first-child {
+        padding: 50px 20px;
+    }
 
-            .ul-propos {
-                font-size: 16px;
-            }
+    .ul-propos {
+        font-size: 16px;
+    }
 
-            .bloc-img {
-                width: 100%;
-                max-width: 100%;
-                min-height: 300px;
-                padding: 40px 20px;
-            }
+    .bloc-img {
+        width: 100%;
+        max-width: 100%;
+        min-height: 300px;
+        padding: 40px 20px;
+    }
 
-            /* Contact */
-            .container-contacter {
-                padding: 50px 20px;
-            }
+    /* Contact */
+    .container-contacter {
+        padding: 50px 20px;
+    }
 
-            .container-contacter h2 {
-                font-size: 28px;
-            }
+    .container-contacter h2 {
+        font-size: 28px;
+    }
 
-            .ligne-contact {
-                width: 80%;
-                max-width: 300px;
-            }
+    .ligne-contact {
+        width: 80%;
+        max-width: 300px;
+    }
 
-            .form {
-                flex-direction: column;
-            }
+    .form {
+        flex-direction: column;
+    }
 
-            #nom,
-            #mail,
-            #message {
-                width: 100%;
-            }
+    #nom,
+    #mail,
+    #message {
+        width: 100%;
+    }
 
-            .bnt-envoi {
-                width: 100%;
-                max-width: 300px;
-            }
+    .bnt-envoi {
+        width: 100%;
+        max-width: 300px;
+    }
 
-            /* Footer */
-            #id-footer {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 40px 20px;
-                gap: 40px;
-            }
+    /* Footer */
+    #id-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 40px;
+    }
 
-            .logo-footer {
-                width: 180px;
-            }
+    .logo-footer {
+        width: 180px;
+    }
 
-            .ul-footer,
-            .ul-footer2,
-            #ulCoor {
-                text-align: center;
-            }
+    .ul-footer,
+    .ul-footer2,
+    #ulCoor {
+        text-align: center;
+    }
 
-            .connect-inscrip {
-                align-items: center;
-            }
+    .mon-footer {
+        height: auto;
+    }
+    
+    .ul-footer {
+        height: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
-            #social-ligne {
-                padding: 0 20px 30px;
-            }
+    .ul-footer2 {
+        margin-bottom: 2rem;
+    }
 
-            .copy-social {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
+    .reseaux-sociaux ,
+    .connect-inscrip {
+        display: none;
+    }
 
-            .reseaux-sociaux {
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-        }
+    #social-ligne {
+        padding: 0 20px 30px;
+    }
+
+    .copy-social {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    
+}
