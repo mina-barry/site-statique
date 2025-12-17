@@ -1,2 +1,2 @@
 # site-statique
-https://mina-barry.github.io/site-statique/html/
+https://mina-barry.github.io/site-statique/html-css/
