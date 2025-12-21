@@ -16,32 +16,33 @@
                 <div class="flex items-center gap-4">
                     <img class="bg-black h-10 w-auto" src="images/logos-removebg-preview.png" alt="logo">
                     
-                    <!-- Menu burger (visible sur mobile avec md:hidden) -->
-                    <input type="checkbox" id="burger" class="hidden peer" />
-                    <label for="burger" class="md:hidden flex flex-col gap-1 cursor-pointer">
-                        <span class="w-6 h-0.5 bg-white"></span>
-                        <span class="w-6 h-0.5 bg-white"></span>
-                        <span class="w-6 h-0.5 bg-white"></span>
-                    </label>
-                    
-                    <div class="hidden md:block">
+                  
+                    <div class="hidden lg:block">
                         <a href="#" class="text-white hover:text-blue-400 transition">Les formations</a>
                     </div>
                 </div>
 
                 <!-- Partie centrale: Recherche -->
-                <div class="flex-1 mx-4 max-w-md">
+                <div class="hidden lg:flex flex-1 mx-4 max-w-md">
                     <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                         type="text" placeholder="Recherche">
                 </div>
 
                 <!-- Partie droite: Connexion/Inscription -->
-                <ul class="flex gap-4">
+                <ul class="hidden  lg:flex gap-4">
                     <li><a class="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition"
                             href="#">Connexion</a></li>
                     <li><a class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
                             href="#">Inscription</a></li>
                 </ul>
+                  <!-- Menu burger (visible sur mobile avec md:hidden) -->
+                    <input type="checkbox" id="burger" class="hidden peer" />
+                    <label for="burger" class="lg:hidden flex flex-col gap-1 cursor-pointer">
+                        <span class="w-6 h-0.5 bg-white"></span>
+                        <span class="w-6 h-0.5 bg-white"></span>
+                        <span class="w-6 h-0.5 bg-white"></span>
+                    </label>
+                    
             </nav>
 
             <!-- HERO SECTION (Image de fond avec texte) -->
