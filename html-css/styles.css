@@ -1204,6 +1204,7 @@ button {
     .img-bg h1 {
         font-size: 28px;
         line-height: 1.2;
+        padding: 2rem;
     }
 
     .img-bg p {
@@ -1214,12 +1215,14 @@ button {
     /* Formations */
     #formation-populaire2,
     #formation-populaire {
-        height: 1800px;
+        height: auto;
+        padding-bottom: 2rem;
     }
 
     /* Formations */
     .formations-recentes,
     .formations-populaires {
+        height: auto;
         padding: 30px 20px 0;
         font-size: 24px;
         line-height: 1.3;
@@ -1383,7 +1386,7 @@ button {
         width: 100%;
     }
 
-    /* Créez vos formations */
+    /* Creez vos formations */
     .creez-vos-formation {
         flex-direction: column;
         padding: 50px 20px;
@@ -1427,7 +1430,7 @@ button {
         margin-bottom: 20px;
     }
 
-    /* À propos */
+    /* A propos */
     .propos {
         flex-direction: column;
         height: auto;
@@ -1536,6 +1539,25 @@ button {
         gap: 20px;
         text-align: center;
     }
+}
 
+/* tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-cadre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px;
+    }
 
+    .container-cadre .cadre {
+        width: 100%;
+        max-width: none;
+    }
+
+    #formation-populaire2,
+    #formation-populaire {
+        height: auto;
+        padding-bottom: 50px;
+    }
 }
